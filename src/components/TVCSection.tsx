@@ -24,12 +24,9 @@ const TVCSection = () => {
         ref={ref}
         className={`container max-w-4xl mx-auto text-center relative z-10 ${isVisible ? "scroll-visible" : "scroll-hidden"}`}
       >
-        <h2 className="font-heebo text-3xl md:text-4xl font-bold text-primary-foreground tracking-tight mb-4">
-          TVC Ramadan
+        <h2 className="font-heebo text-3xl md:text-5xl font-bold text-primary-foreground tracking-tight mb-12">
+          #MelayaniSepenuhHati
         </h2>
-        <p className="font-garamond italic text-primary-foreground/70 mb-12 tracking-wide text-lg">
-          Saksikan iklan Ramadan terbaru dari Telkomsel
-        </p>
         <div className="relative aspect-video rounded-xl overflow-hidden glass-dark shadow-2xl">
           {playing ? (
             <iframe
