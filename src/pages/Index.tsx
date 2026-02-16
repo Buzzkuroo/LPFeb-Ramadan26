@@ -1,14 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import HeroSlider from "@/components/HeroSlider";
+import PromoSection from "@/components/PromoSection";
+import GiveawaySection from "@/components/GiveawaySection";
+import ExploreSection from "@/components/ExploreSection";
+import TVCSection from "@/components/TVCSection";
+import ReelsGallery from "@/components/ReelsGallery";
+import FooterCTA from "@/components/FooterCTA";
 
-const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
-};
+const Index = () => (
+  <div className="min-h-screen bg-background">
+    <Navbar />
+    <main>
+      <HeroSlider />
+      <div id="promo"><PromoSection /></div>
+      <div id="giveaway"><GiveawaySection /></div>
+      <div id="explore"><ExploreSection /></div>
+      <div id="tvc"><TVCSection /></div>
+      <div id="program"><ReelsGallery /></div>
+    </main>
+    <FooterCTA />
+  </div>
+);
 
 export default Index;
