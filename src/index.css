@@ -93,3 +93,37 @@
     text-wrap: balance;
   }
 }
+
+/* Scroll animation base */
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-hidden .stagger-1 { transition-delay: 0.1s; }
+.scroll-hidden .stagger-2 { transition-delay: 0.2s; }
+.scroll-hidden .stagger-3 { transition-delay: 0.3s; }
+
+/* Glassmorphism utilities */
+.glass {
+  background: hsla(0, 0%, 100%, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid hsla(0, 0%, 100%, 0.18);
+}
+.glass-strong {
+  background: hsla(0, 0%, 100%, 0.55);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid hsla(0, 0%, 100%, 0.25);
+}
+.glass-dark {
+  background: hsla(220, 50%, 10%, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid hsla(0, 0%, 100%, 0.08);
+}
