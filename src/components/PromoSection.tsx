@@ -22,7 +22,7 @@ const PromoSection = () => (
         {promos.map((p, i) => (
           <div
             key={i}
-            className="group bg-card rounded-sm overflow-hidden border border-border hover:shadow-lg transition-shadow duration-300"
+            className="group flex flex-col bg-card rounded-sm overflow-hidden border-2 border-border hover:shadow-lg transition-shadow duration-300"
           >
             <div className="aspect-[4/3] overflow-hidden">
               <img
@@ -32,9 +32,11 @@ const PromoSection = () => (
                 loading="lazy"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-lg font-semibold text-secondary mb-2 tracking-tight">{p.title}</h3>
-              <p className="text-muted-foreground text-sm mb-4">{p.desc}</p>
+            <div className="p-6 flex flex-col flex-grow">
+              <div className="flex-grow">
+                <h3 className="text-lg font-semibold text-secondary mb-2 tracking-tight">{p.title}</h3>
+                <p className="text-muted-foreground text-sm mb-4">{p.desc}</p>
+              </div>
               <a
                 href="#"
                 className="inline-flex items-center gap-2 text-secondary font-semibold text-sm tracking-wide hover:gap-3 transition-all"
