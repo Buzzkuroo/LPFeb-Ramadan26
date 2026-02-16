@@ -7,7 +7,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 glass-strong border-b border-white/20">
       <div className="container max-w-6xl mx-auto flex items-center justify-between h-16 px-6">
         <a href="#" className="text-secondary font-bold text-xl tracking-tight">
           TELKOMSEL
@@ -32,7 +32,7 @@ const Navbar = () => {
         </button>
       </div>
       {open && (
-        <div className="md:hidden bg-background border-b border-border px-6 pb-4">
+        <div className="md:hidden glass-strong border-b border-white/20 px-6 pb-4">
           {links.map((l) => (
             <a
               key={l}

@@ -6,6 +6,7 @@ import ExploreSection from "@/components/ExploreSection";
 import TVCSection from "@/components/TVCSection";
 import ReelsGallery from "@/components/ReelsGallery";
 import FooterCTA from "@/components/FooterCTA";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => (
   <div className="min-h-screen bg-background">
@@ -19,6 +20,7 @@ const Index = () => (
       <div id="program"><ReelsGallery /></div>
     </main>
     <FooterCTA />
+    <WhatsAppButton />
   </div>
 );
 

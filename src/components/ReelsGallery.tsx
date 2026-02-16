@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight, Instagram } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const reels = [
   { id: 1, color: "from-primary to-accent", title: "Sahur Seru", handle: "@telkomsel" },
@@ -12,6 +13,7 @@ const reels = [
 
 const ReelsGallery = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const { ref, isVisible } = useScrollAnimation();
 
   const scroll = (dir: number) => {
     scrollRef.current?.scrollBy({ left: dir * 300, behavior: "smooth" });
@@ -19,7 +21,10 @@ const ReelsGallery = () => {
 
   return (
     <section className="py-20 px-6 bg-background">
-      <div className="container max-w-6xl mx-auto">
+      <div
+        ref={ref}
+        className={`container max-w-6xl mx-auto ${isVisible ? "scroll-visible" : "scroll-hidden"}`}
+      >
         <div className="flex items-center justify-between mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-secondary tracking-tight">
@@ -32,14 +37,14 @@ const ReelsGallery = () => {
           <div className="flex gap-2">
             <button
               onClick={() => scroll(-1)}
-              className="p-2 border border-border rounded-full hover:bg-muted transition-colors"
+              className="p-2 glass rounded-full hover:bg-white/20 transition-colors"
               aria-label="Scroll left"
             >
               <ChevronLeft size={20} className="text-secondary" />
             </button>
             <button
               onClick={() => scroll(1)}
-              className="p-2 border border-border rounded-full hover:bg-muted transition-colors"
+              className="p-2 glass rounded-full hover:bg-white/20 transition-colors"
               aria-label="Scroll right"
             >
               <ChevronRight size={20} className="text-secondary" />
@@ -59,7 +64,7 @@ const ReelsGallery = () => {
               <div
                 className={`aspect-[9/16] rounded-2xl bg-gradient-to-br ${reel.color} relative overflow-hidden group cursor-pointer`}
               >
-                <div className="absolute inset-0 bg-secondary/20 group-hover:bg-secondary/10 transition-colors" />
+                <div className="absolute inset-0 glass opacity-30 group-hover:opacity-10 transition-opacity" />
                 <div className="absolute top-4 left-4 flex items-center gap-2">
                   <Instagram size={16} className="text-primary-foreground" />
                   <span className="text-primary-foreground text-xs font-medium">{reel.handle}</span>
