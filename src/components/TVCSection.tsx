@@ -12,10 +12,10 @@ const TVCSection = () => {
         ref={ref}
         className={`container max-w-4xl mx-auto text-center ${isVisible ? "scroll-visible" : "scroll-hidden"}`}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-secondary tracking-tight mb-4">
+        <h2 className="font-heebo text-3xl md:text-4xl font-bold text-secondary tracking-tight mb-4">
           TVC Ramadan
         </h2>
-        <p className="text-muted-foreground mb-12 tracking-wide">
+        <p className="font-garamond italic text-muted-foreground mb-12 tracking-wide text-lg">
           Saksikan iklan Ramadan terbaru dari Telkomsel
         </p>
         <div className="relative aspect-video rounded-xl overflow-hidden glass-dark shadow-2xl">

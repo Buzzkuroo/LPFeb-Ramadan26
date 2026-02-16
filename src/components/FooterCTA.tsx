@@ -12,10 +12,10 @@ const FooterCTA = () => {
           ref={ref}
           className={`container max-w-3xl mx-auto ${isVisible ? "scroll-visible" : "scroll-hidden"}`}
         >
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
+          <h2 className="font-heebo text-3xl md:text-5xl font-bold tracking-tight mb-6">
             Ramadan Lebih Bermakna Bersama Telkomsel
           </h2>
-          <p className="text-secondary-foreground/70 mb-10 text-lg tracking-wide font-light">
+          <p className="font-garamond italic text-secondary-foreground/70 mb-10 text-xl tracking-wide">
             Jangan lewatkan promo dan penawaran spesial Ramadan
           </p>
           <button className="bg-primary text-primary-foreground px-10 py-4 rounded-sm font-semibold tracking-widest uppercase text-sm hover:opacity-90 transition-opacity">

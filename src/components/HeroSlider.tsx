@@ -68,10 +68,10 @@ const HeroSlider = () => {
                 current === i ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground tracking-tight mb-4">
+              <h1 className="font-heebo text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground tracking-tight mb-4">
                 {slide.title}
               </h1>
-              <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 tracking-wide font-light max-w-xl mx-auto">
+              <p className="font-garamond italic text-lg md:text-xl text-primary-foreground/80 mb-8 tracking-wide max-w-xl mx-auto">
                 {slide.subtitle}
               </p>
               <button className="bg-primary text-primary-foreground px-8 py-3 rounded-sm font-semibold tracking-widest uppercase text-sm hover:opacity-90 transition-opacity">

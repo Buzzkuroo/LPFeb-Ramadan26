@@ -27,7 +27,7 @@ const ReelsGallery = () => {
       >
         <div className="flex items-center justify-between mb-12">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary tracking-tight">
+            <h2 className="font-heebo text-3xl md:text-4xl font-bold text-secondary tracking-tight">
               Program Arek Lokal
             </h2>
             <p className="text-muted-foreground tracking-wide mt-2">
