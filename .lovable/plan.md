@@ -1,15 +1,13 @@
 
 
-## Hapus Placeholder Video YouTube
+## Buat Section TVC Full Screen
 
-Menghapus elemen video placeholder (kotak dengan tombol play dan "Tonton Video") yang menutupi background video YouTube di section TVC.
+Mengubah section TVC agar memenuhi seluruh layar (full viewport height).
 
 ### Detail Teknis
 
 Pada `src/components/TVCSection.tsx`:
-- Hapus seluruh `div` dengan class `aspect-video` yang berisi iframe player dan tombol play
-- Hapus state `playing` dan import `Play` dari lucide-react karena tidak lagi diperlukan
-- Sisakan hanya heading `#MelayaniSepenuhHati` di atas background video YouTube
-
-Hasilnya: section hanya menampilkan teks `#MelayaniSepenuhHati` di atas video YouTube background yang autoplay dan looping, tanpa ada elemen lain yang menghalangi.
+- Tambahkan `min-h-screen` pada elemen `<section>` agar tingginya memenuhi seluruh viewport
+- Tambahkan `flex items-center justify-center` agar konten teks berada di tengah secara vertikal dan horizontal
+- Hapus `py-20` karena tidak diperlukan lagi saat full screen
 
