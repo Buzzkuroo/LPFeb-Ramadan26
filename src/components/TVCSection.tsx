@@ -4,7 +4,7 @@ const TVCSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="relative py-20 px-6 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       {/* YouTube Background Video - autoplay, loop, muted */}
       <div className="absolute inset-0 z-0">
         <iframe
