@@ -29,10 +29,10 @@ const ExploreSection = () => {
         ref={ref}
         className={`container max-w-6xl mx-auto ${isVisible ? "scroll-visible" : "scroll-hidden"}`}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-secondary tracking-tight text-center mb-4">
+        <h2 className="font-heebo text-3xl md:text-4xl font-bold text-secondary tracking-tight text-center mb-4">
           Explore Ramadan
         </h2>
-        <p className="text-muted-foreground text-center mb-14 tracking-wide">
+        <p className="font-garamond italic text-muted-foreground text-center mb-14 tracking-wide text-lg">
           Temukan produk terbaik untuk kebutuhan Anda
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

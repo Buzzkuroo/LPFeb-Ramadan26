@@ -19,10 +19,10 @@ const PromoSection = () => {
         ref={ref}
         className={`container max-w-6xl mx-auto ${isVisible ? "scroll-visible" : "scroll-hidden"}`}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-secondary tracking-tight text-center mb-4">
+        <h2 className="font-heebo text-3xl md:text-4xl font-bold text-secondary tracking-tight text-center mb-4">
           Promo Ramadan Terbaru
         </h2>
-        <p className="text-muted-foreground text-center mb-14 tracking-wide">
+        <p className="font-garamond italic text-muted-foreground text-center mb-14 tracking-wide text-lg">
           Penawaran terbaik untuk bulan suci
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -41,7 +41,7 @@ const PromoSection = () => {
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <div className="flex-grow">
-                  <h3 className="text-lg font-semibold text-secondary mb-2 tracking-tight">{p.title}</h3>
+                  <h3 className="font-heebo text-lg font-semibold text-secondary mb-2 tracking-tight">{p.title}</h3>
                   <p className="text-muted-foreground text-sm mb-4">{p.desc}</p>
                 </div>
                 <a

@@ -14,7 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"],
+        heebo: ["Heebo", "sans-serif"],
+        garamond: ["Cormorant Garamond", "serif"],
+        yrsa: ["Yrsa", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -17,7 +17,7 @@ const GiveawaySection = () => {
               <Gift size={16} />
               Giveaway Ramadan
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-secondary tracking-tight mb-6 leading-tight">
+            <h2 className="font-heebo text-3xl md:text-5xl font-bold text-secondary tracking-tight mb-6 leading-tight">
               Menangkan Hadiah Spesial Ramadan
             </h2>
             <p className="text-muted-foreground mb-8 leading-relaxed">
