@@ -14,9 +14,11 @@ export default {
     },
     extend: {
       fontFamily: {
-        heebo: ["Heebo", "sans-serif"],
-        garamond: ["Cormorant Garamond", "serif"],
-        yrsa: ["Yrsa", "serif"],
+        sans: ["Outfit", "sans-serif"],
+        // Map all legacy font classes to Outfit to ensure consistency
+        heebo: ["Outfit", "sans-serif"],
+        garamond: ["Outfit", "sans-serif"],
+        yrsa: ["Outfit", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -1,50 +1,24 @@
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
-
-const links = ["Promo", "Giveaway", "Explore", "TVC", "Program"];
-
+/**
+ * Navbar Component
+ * Displays the main navigation bar with "Arek Lokal" and "Telkomsel" branding.
+ * Uses a glass-morphism effect and stays fixed at the top of the viewport.
+ */
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
-
+  const logoPath = "/src/assets/logo_telkomsel.png";
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass-strong border-b border-white/20">
-      <div className="container max-w-6xl mx-auto flex items-center justify-between h-16 px-6">
-        <a href="#" className="font-heebo text-secondary font-bold text-xl tracking-tight">
-          TELKOMSEL
-        </a>
-        <div className="hidden md:flex items-center gap-8">
-          {links.map((l) => (
-            <a
-              key={l}
-              href={`#${l.toLowerCase()}`}
-              className="text-muted-foreground text-sm font-medium tracking-wide hover:text-secondary transition-colors"
-            >
-              {l}
-            </a>
-          ))}
+      <div className="container max-w-6xl mx-auto flex items-center justify-between h-14 px-6 md:px-8 transition-all duration-300">
+        <div className="font-sans font-bold text-xl tracking-tight text-secondary hover:opacity-80 transition-opacity cursor-pointer">
+          Arek Lokal
         </div>
-        <button
-          onClick={() => setOpen(!open)}
-          className="md:hidden text-secondary"
-          aria-label="Menu"
-        >
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center h-full">
+          <img
+            src={logoPath}
+            alt="Telkomsel Logo"
+            className="h-5 w-auto object-contain hover:scale-105 transition-transform duration-300"
+          />
+        </div>
       </div>
-      {open && (
-        <div className="md:hidden glass-strong border-b border-white/20 px-6 pb-4">
-          {links.map((l) => (
-            <a
-              key={l}
-              href={`#${l.toLowerCase()}`}
-              onClick={() => setOpen(false)}
-              className="block py-3 text-muted-foreground text-sm font-medium tracking-wide hover:text-secondary transition-colors"
-            >
-              {l}
-            </a>
-          ))}
-        </div>
-      )}
     </nav>
   );
 };

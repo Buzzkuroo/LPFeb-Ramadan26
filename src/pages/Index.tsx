@@ -5,6 +5,7 @@ import GiveawaySection from "@/components/GiveawaySection";
 import ExploreSection from "@/components/ExploreSection";
 import TVCSection from "@/components/TVCSection";
 import ReelsGallery from "@/components/ReelsGallery";
+import AppDownloadSection from "@/components/AppDownloadSection";
 import FooterCTA from "@/components/FooterCTA";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -14,10 +15,10 @@ const Index = () => (
     <main>
       <HeroSlider />
       <div id="promo"><PromoSection /></div>
-      <div id="giveaway"><GiveawaySection /></div>
-      <div id="explore"><ExploreSection /></div>
       <div id="tvc"><TVCSection /></div>
       <div id="program"><ReelsGallery /></div>
+      <div id="explore"><ExploreSection /></div>
+      <div id="app-download"><AppDownloadSection /></div>
     </main>
     <FooterCTA />
     <WhatsAppButton />

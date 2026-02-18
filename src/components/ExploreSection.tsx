@@ -15,8 +15,8 @@ const categories = [
     image: exploreMobile,
     icon: Smartphone,
     title: "Produk Mobile",
-    subtitle: "Paket & Smartphone",
-    desc: "Paket data dan smartphone dengan harga spesial Ramadan",
+    subtitle: "Paket Internet Terbaik",
+    desc: "Nikmati internet dan hiburan tanpa batas selama Ramadan",
   },
 ];
 
@@ -24,16 +24,16 @@ const ExploreSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="py-20 px-6 bg-background">
+    <section className="py-20 px-6 bg-muted/50">
       <div
         ref={ref}
         className={`container max-w-6xl mx-auto ${isVisible ? "scroll-visible" : "scroll-hidden"}`}
       >
         <h2 className="font-heebo text-3xl md:text-4xl font-bold text-secondary tracking-tight text-center mb-4">
-          Explore Ramadan
+          Pilih Promo Pilihan Ramadan Terbaik
         </h2>
-        <p className="font-garamond italic text-muted-foreground text-center mb-14 tracking-wide text-lg">
-          Temukan produk terbaik untuk kebutuhan Anda
+        <p className="font-garamond text-muted-foreground text-center mb-14 tracking-wide text-lg">
+          Temukan produk terbaik untuk kebutuhan Anda di bulan Ramadan
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {categories.map((cat, i) => (
