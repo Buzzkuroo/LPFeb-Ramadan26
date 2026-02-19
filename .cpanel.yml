@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/indiho14/areklokal.com/
+    - export DEPLOYPATH=/home/indiho14/public_html/
     - /bin/cp -R dist/* $DEPLOYPATH
