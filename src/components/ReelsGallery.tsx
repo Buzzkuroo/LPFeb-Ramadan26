@@ -8,10 +8,10 @@ interface ReelItem {
 }
 
 const REELS_DATA: ReelItem[] = [
-  { id: "DUx73GFk46h", title: "Kultum by Arek Lokal" },
-  { id: "DUvJWsBEz26", title: "Promo IndiHome Ramadan" },
+  { id: "DU9PvvUk7p5", title: "Kultum by Arek Lokal" },
+  { id: "DU8PZdxk2zC", title: "Series Ramadan Eps.1" },
   { id: "DUr_LjeEcQ1", title: "IndiHome Promo Ramadan" },
-  { id: "DUnaka_k8ch", title: "Promo Tirto & Co." },
+  { id: "DU7ESwFE_1l", title: "Tutorial Lapor Gangguan" },
   { id: "DUsTdCXkyOa", title: "Teknisi IndiHome On Duty" },
 ];
 
